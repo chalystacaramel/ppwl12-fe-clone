@@ -1,10 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Marcellus&display=swap');
 @import "tailwindcss";
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("/fonts/Beaufort-for-LOL-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("/fonts/Beaufort-for-LOL-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Beaufort";
+  src: url("/fonts/Beaufort-for-LOL-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Spiegel";
+  src: url("/fonts/Spiegel-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@theme {
+  --font-beaufort: "Beaufort", serif;
+  --font-spiegel: "Spiegel", serif;
+}
 
 :root {
   --background: #0a0a0c;
   --foreground: #e8e6e3;
-  --gold: #c8aa6e;
+  --gold: #937341;
   --gold-light: #f0e6d2;
   --gold-dark: #785a28;
   --card-bg: #111113;
@@ -28,11 +60,14 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cinzel', serif;
+  font-family: 'Spiegel', serif;
+  font-weight: 700;
+  color: var(--gold);
+  
 }
 
 .font-display {
-  font-family: 'Cinzel', serif;
+  font-family: 'Beaufort', serif;
 }
 
 .text-gold {
@@ -52,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section-title {
-  font-family: 'Cinzel', serif;
+  font-family: 'Beaufort', serif;
   letter-spacing: 0.35em;
   text-transform: uppercase;
   color: var(--gold);

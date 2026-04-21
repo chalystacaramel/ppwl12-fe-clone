@@ -307,14 +307,14 @@ function ChampionCard({
                 </div>
 
                 {/* Title */}
-                <p className="text-[#c8aa6e] text-[10px] md:text-xs tracking-[0.2em] uppercase text-center mb-1">
+                <h3 className="text-[10px] md:text-xs tracking-[0.2em] uppercase text-center mb-1">
                     {title}
-                </p>
+                </h3>
 
                 {/* Name */}
-                <h3 className="font-display text-lg md:text-xl text-[#f0e6d2] tracking-wider uppercase text-center">
+                <h1 className="font-display text-lg md:text-xl text-[#f0e6d2] tracking-wider uppercase text-center">
                     {name}
-                </h3>
+                </h1>
 
                 {/* Explore button on hover */}
                 <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
