@@ -1,10 +1,11 @@
+import PricingCalculator from "../components/PricingCalculator";
 import Page2Hero from "../components/Page2Hero";
 
 export default function Page2() {
   return (
-    <div>
+    <div className="min-h-screen bg-white">
       <Page2Hero />
-      {/* nanti komponen anggota lain ditambah di sini */}
+      <PricingCalculator />
     </div>
   );
 }
