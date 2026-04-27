@@ -9,13 +9,12 @@ Kelas Praktikum Pemograman Web Lanjut 2026 (Sistem Informasi/UNTAN). Minggu ke-1
 
 **Class A / Team 1**
 
-Main Web: [kokbisa.id](https://www.kokbisa.id/)
+Main Web: [notion.com](https://www.notion.com/)
 
 |        Name       |    NIM     | Reference Page | Spesific Component |
 |-------------------|------------|----------------|--------------------|
-| Leo Prangs Tobing | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Navbar, Header Carousel |
-| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Main |
-| Other             | H110124000 | [Page1-Home](https://www.kokbisa.id/) | Footer |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Title Area |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Form Area |
-| Other             | H110124000 | [Page2-Langganan](https://www.kokbisa.id/langganan) | Button Area |
+| Adhelia Issabel   | H110124001 | [Page2-Langganan](https://www.notion.com/pricing) | Pricing Calculator |
+| Chalysta Setyani  | H110124003 | [Page1-Home](https://www.notion.com/) | Main Content, Features, Testimonials |
+| Iqlima Nur'Ain    | H110124007 | [Page2-Langganan](https://www.notion.com/pricing) | Title Area |
+| Aisyah            | H110124044 | [Page1-Home](https://www.notion.com/) | Navbar, Header Carousel, Logo |
+| Andy Emerik       | H110124045 | [Page1-Home](https://www.notion.com/) | Footer |
