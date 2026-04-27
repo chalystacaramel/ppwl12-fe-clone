@@ -1,49 +1,5 @@
 import { useState } from "react";
 
-const plans = [
-  {
-    name: "Free", price: "$0", priceYearly: "$0",
-    period: "per member / month",
-    description: "For individuals to organize personal projects and life.",
-    buttonText: "Sign up",
-    buttonStyle: "outline",
-    sectionTitle: "Essentials for staying organized.",
-    previousTier: null,
-    features: ["Trial of Notion AI","Basic forms","Basic sites","Notion Calendar","Notion Mail (Syncs with Gmail)","Databases including subtasks, dependencies, custom properties and more"],
-  },
-  {
-    name: "Plus", price: "$10", priceYearly: "$8",
-    period: "per member / month",
-    description: "For small teams and professionals to work together.",
-    buttonText: "Get started",
-    buttonStyle: "outline",
-    sectionTitle: null,
-    previousTier: "Everything in Free, and:",
-    features: ["Trial of Notion AI","Custom forms","Custom sites","Unlimited charts","Unlimited collaborative blocks","Unlimited file uploads","Basic integrations"],
-  },
-  {
-    name: "Business", price: "$20", priceYearly: "$16",
-    period: "per member / month",
-    description: "For growing businesses to streamline teamwork.",
-    buttonText: "Get started",
-    buttonStyle: "primary",
-    isRecommended: true,
-    sectionTitle: "The AI workspace for work that matters.",
-    previousTier: "Everything in Plus, and:",
-    features: ["Notion Agent","AI Meeting Notes","Enterprise Search","SAML SSO","Granular database permissions","Verify any page","Private teamspaces","Domain verification","Premium integrations"],
-  },
-  {
-    name: "Enterprise", price: null, priceYearly: null,
-    period: "Custom pricing",
-    description: "For organizations to operate with scalability, control, and security.",
-    buttonText: "Contact Sales",
-    buttonStyle: "outline",
-    sectionTitle: null,
-    previousTier: "Everything in Business, and:",
-    features: ["Zero data retention with LLM providers","User provisioning (SCIM)","Advanced security & controls","Audit log","Customer success manager","Security & Compliance integrations (DLP, SIEM)","Domain management","Advanced integrations"],
-  },
-];
-
 export default function PricingCalculator() {
   const [isYearly, setIsYearly] = useState(true);
 
