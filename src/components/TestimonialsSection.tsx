@@ -51,7 +51,7 @@ export default function TestimonialsSection() {
               <p className="text-2xl md:text-3xl text-[#131b41] italic mb-6">
                 "There's power in a single platform where you can do all your work. Notion is that single place."
               </p>
-              <a href="#" className="text-[#0a85d1] font-medium hover:underline">
+              <a href="/stories/openai" className="text-[#0a85d1] font-medium hover:underline">
                 Read the full story →
               </a>
             </div>
@@ -67,7 +67,7 @@ export default function TestimonialsSection() {
 
         <div className="grid md:grid-cols-3 gap-4 mb-12">
           {testimonials.map((testimonial, index) => (
-            <a key={index} href="#" className="bg-white rounded-xl p-6 group hover:shadow-md transition-shadow">
+            <a key={index} href="/customers" className="bg-white rounded-xl p-6 group hover:shadow-md transition-shadow">
               <p className="font-bold text-[#131b41] mb-4">{testimonial.company}</p>
               <p className="text-gray-700 text-sm leading-relaxed">
                 "{testimonial.quote}"
@@ -78,11 +78,12 @@ export default function TestimonialsSection() {
         </div>
 
         <div className="overflow-hidden py-4">
-          <div className="flex gap-8">
+          <div className="flex animate-marquee whitespace-nowrap">
             {[...stats, ...stats].map((stat, index) => (
-              <div key={index} className="flex items-center gap-2 shrink-0 text-gray-600">
+              <div key={index} className="flex items-center gap-2 shrink-0 mx-8 text-gray-600">
                 <span>{stat.icon}</span>
                 <span className="text-sm whitespace-nowrap">{stat.label}</span>
+                <span className="text-gray-300 ml-2">•</span>
               </div>
             ))}
           </div>

@@ -1,14 +1,15 @@
-import { useState } from "react";
+type Page2HeroProps = {
+  isYearly: boolean;
+  setIsYearly: (value: boolean) => void;
+};
 
-export default function Page2Hero() {
-  const [isYearly, setIsYearly] = useState(false);
-
+export default function Page2Hero({ isYearly, setIsYearly }: Page2HeroProps) {
   return (
     <section
       className="w-full px-8 md:px-16 pt-16 pb-8"
       style={{ backgroundColor: "#ffffff" }}
     >
-      {/* Heading - rata kiri, besar */}
+      {/* Heading */}
       <h1
         className="text-5xl md:text-7xl font-bold tracking-tight mb-8 max-w-4xl"
         style={{ color: "#000000", fontFamily: "sans-serif" }}
@@ -16,30 +17,16 @@ export default function Page2Hero() {
         One tool to run your company.
       </h1>
 
-      {/* Trusted by - horizontal */}
+      {/* Trusted by */}
       <div className="flex flex-wrap items-center gap-6 mb-12">
-        <span
-          className="text-sm"
-          style={{ color: "#6b7280", fontFamily: "sans-serif" }}
-        >
+        <span className="text-sm" style={{ color: "#6b7280", fontFamily: "sans-serif" }}>
           Trusted by teams at
         </span>
-        {/* Logos sebagai styled text */}
-        <span className="font-bold text-base" style={{ color: "#000", fontFamily: "sans-serif" }}>
-          OpenAI
-        </span>
-        <span className="font-bold text-base" style={{ color: "#000", fontFamily: "sans-serif" }}>
-          𝔽 Figma
-        </span>
-        <span className="font-bold text-base tracking-widest text-sm" style={{ color: "#000", fontFamily: "sans-serif" }}>
-          VOLVO
-        </span>
-        <span className="font-bold text-base" style={{ color: "#000", fontFamily: "sans-serif" }}>
-          ramp ↗
-        </span>
-        <span className="font-bold text-base tracking-widest text-sm" style={{ color: "#000", fontFamily: "sans-serif" }}>
-          ⊙ CURSOR
-        </span>
+        <span className="font-bold text-base" style={{ color: "#000", fontFamily: "sans-serif" }}>OpenAI</span>
+        <span className="font-bold text-base" style={{ color: "#000", fontFamily: "sans-serif" }}>𝔽 Figma</span>
+        <span className="font-bold text-base tracking-widest text-sm" style={{ color: "#000", fontFamily: "sans-serif" }}>VOLVO</span>
+        <span className="font-bold text-base" style={{ color: "#000", fontFamily: "sans-serif" }}>ramp ↗</span>
+        <span className="font-bold text-base tracking-widest text-sm" style={{ color: "#000", fontFamily: "sans-serif" }}>⊙ CURSOR</span>
       </div>
 
       {/* Toggle + Save label + Price in USD */}
@@ -76,7 +63,7 @@ export default function Page2Hero() {
             </button>
           </div>
 
-          {/* Save label - selalu tampil */}
+          {/* Save label */}
           <span
             className="text-sm font-medium"
             style={{ color: "#2563eb", fontFamily: "sans-serif" }}
@@ -86,10 +73,7 @@ export default function Page2Hero() {
         </div>
 
         {/* Price in USD */}
-        <span
-          className="text-sm"
-          style={{ color: "#6b7280", fontFamily: "sans-serif" }}
-        >
+        <span className="text-sm" style={{ color: "#6b7280", fontFamily: "sans-serif" }}>
           Price in USD
         </span>
       </div>

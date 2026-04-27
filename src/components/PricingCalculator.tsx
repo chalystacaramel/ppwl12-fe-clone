@@ -1,8 +1,9 @@
-import { useState } from "react";
+type PricingCalculatorProps = {
+  isYearly: boolean;
+  setIsYearly: (value: boolean) => void;
+};
 
-export default function PricingCalculator() {
-  const [isYearly, setIsYearly] = useState(true);
-
+export default function PricingCalculator({ isYearly, setIsYearly }: PricingCalculatorProps) {
   return (
     <div className="max-w-6xl mx-auto px-6 py-10">
 

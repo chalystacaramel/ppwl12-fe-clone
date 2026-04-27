@@ -30,7 +30,7 @@
             {companies.map((company, index) => (
                 <div
                 key={`${company.name}-1-${index}`}
-                className="flex-shrink-0 mx-8 text-white/60 hover:text-white/90 transition-colors"
+                className="shrink-0 mx-8 text-white/60 hover:text-white/90 transition-colors"
                 >
                 <span className="text-lg font-semibold tracking-wide">{company.text}</span>
                 <span className="text-white/40 ml-2">•</span>
@@ -40,7 +40,7 @@
             {companies.map((company, index) => (
                 <div
                 key={`${company.name}-2-${index}`}
-                className="flex-shrink-0 mx-8 text-white/60 hover:text-white/90 transition-colors"
+                className="shrink-0 mx-8 text-white/60 hover:text-white/90 transition-colors"
                 >
                 <span className="text-lg font-semibold tracking-wide">{company.text}</span>
                 <span className="text-white/40 ml-2">•</span>

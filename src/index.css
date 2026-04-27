@@ -50,6 +50,11 @@
   .notion-teal {
     @apply text-[#37a1bf];
   }
+
+  /* Font serif ala Notion — dipakai di PricingCalculator headings */
+  .notion-serif {
+    font-family: Georgia, "Times New Roman", serif;
+  }
 }
 
 /* ================= ANIMATIONS ================= */
