@@ -10,4 +10,5 @@ export default function Page1() {
       <TestimonialsSection />
     </main>
   );
+  
 }
