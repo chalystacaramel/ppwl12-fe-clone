@@ -1,7 +1,10 @@
+import Page2Hero from "../components/Page2Hero";
+
 export default function Page2() {
-    return (
-        <div className="h-[calc(100vh-4rem)] flex justify-center items-center">
-            <h1>Page 2</h1>
-        </div>
-    )
+  return (
+    <div>
+      <Page2Hero />
+      {/* nanti komponen anggota lain ditambah di sini */}
+    </div>
+  );
 }
