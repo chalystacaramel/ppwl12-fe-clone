@@ -1,6 +1,6 @@
 import HeaderCarousel from "@/components/HeaderCarousel";
 import FeaturesSection from "@/components/FeaturesSection";
-import { CompanyLogos } from  "@/components/CompanyLogos";
+import CompanyLogos from  "@/components/CompanyLogos";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WorkTogetherSection from "@/components/WorkTogetherSection";
 import PricingCalculator from "@/components/PricingCalculator";
