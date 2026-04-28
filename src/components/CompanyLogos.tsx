@@ -14,7 +14,7 @@
     { name: "clay", text: "clay" },
     ];
     
-    export function CompanyLogos() {
+    export default function CompanyLogos() {
     return (
         <section className="hero-gradient py-10 overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
