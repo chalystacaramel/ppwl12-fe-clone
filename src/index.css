@@ -1,5 +1,36 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+/* ================= FONTS ================= */
+@font-face {
+  font-family: 'NotionInter';
+  src: url('/fonts/NotionInter-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotionInter';
+  src: url('/fonts/NotionInter-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotionInter';
+  src: url('/fonts/NotionInter-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NotionInter';
+  src: url('/fonts/NotionInter-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LyonText';
+  src: url('/fonts/LyonText-Regular-Web.d7bfb4be.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
 
 /* ================= BASE ================= */
 @layer base {
@@ -8,9 +39,14 @@
   }
 
   body {
-    @apply font-sans antialiased bg-white text-gray-900;
-  }
+  @apply antialiased bg-white text-gray-900;
+  font-family: 'NotionInter', sans-serif;
+}
 
+  h1 {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  }
+  
   .dark body {
     @apply bg-[#191d3a] text-white;
   }
@@ -37,11 +73,11 @@
     box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.1);
   }
 
-  /* Gradient */
   .hero-gradient {
-    background: linear-gradient(180deg, #1a1f4e 0%, #232966 50%, #3c4a9c 100%);
+  background:
+    radial-gradient(ellipse at top, rgba(59,91,219,0.25), transparent 60%),
+    linear-gradient(180deg, #060b24 0%, #0d1235 40%, #141b4d 100%);
   }
-
   /* Warna khusus */
   .notion-dark {
     @apply bg-[#191d3a];
@@ -49,6 +85,11 @@
 
   .notion-teal {
     @apply text-[#37a1bf];
+  }
+
+  /* Font serif ala Notion — dipakai di PricingCalculator headings */
+  .notion-serif {
+    font-family: Georgia, "Times New Roman", serif;
   }
 }
 

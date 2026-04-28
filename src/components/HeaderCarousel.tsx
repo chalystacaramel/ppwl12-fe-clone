@@ -1,249 +1,116 @@
-    export default function HeaderCarousel() {
-    return (
-        <section className="hero-gradient relative overflow-hidden pb-16 pt-8 lg:pb-24 lg:pt-16">
-        {/* Floating Icons - Left Side */}
-        <div className="absolute left-4 top-20 lg:left-16 lg:top-28 animate-float hidden md:block z-20">
-            <div className="bg-[#f9c846] rounded-2xl p-4 shadow-xl relative">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 6h16M4 12h16M4 18h10" stroke="#191d3a" strokeWidth="2.5" strokeLinecap="round"/>
-            </svg>
-            <div className="absolute -right-1 -top-1 bg-[#37a1bf] rounded-full w-5 h-5 flex items-center justify-center">
-                <svg width="10" height="10" viewBox="0 0 24 24" fill="white">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                </svg>
+const agents = [
+  { img: "/images/agents/book.png",      bg: "#f5c842", task: "check.svg",   pos: { left: "3%",  top: "12%" } },
+  { img: "/images/agents/globe.png",     bg: "#e05c5c", task: "gmail.svg",   pos: { left: "6%",  top: "38%" } },
+  { img: "/images/agents/files-v2.png",  bg: "#5b8ef0", task: "hubspot.svg", pos: { left: "1%",  top: "62%" } },
+  { img: "/images/agents/checkmark.png", bg: "#a259ff", task: "github.svg",  pos: { right: "3%", top: "12%" } },
+  { img: "/images/agents/light_bulb.png",bg: "#ff8c42", task: "slack.svg",   pos: { right: "6%", top: "38%" } },
+  { img: "/images/agents/apple.png",     bg: "#e05c8a", task: "chart.svg",   pos: { right: "1%", top: "62%" } },
+];
+
+export default function HeaderCarousel() {
+  return (
+    <section className="hero-gradient relative overflow-hidden pb-16 pt-8 lg:pb-24 lg:pt-16 min-h-[600px]">
+
+      {/* Agent Floating Icons */}
+      {agents.map((agent, i) => (
+        <div
+          key={i}
+          className="absolute animate-float hidden md:flex z-20"
+          style={{ ...agent.pos, animationDelay: `${i * 0.5}s` }}
+        >
+          <div className="relative">
+            <span
+              className="w-14 h-14 rounded-full flex items-center justify-center shadow-xl"
+              style={{ backgroundColor: agent.bg }}
+            >
+              <img src={agent.img} alt="" width={32} height={32} className="object-contain" />
+            </span>
+            <div className="absolute -bottom-2 -right-2 bg-white rounded-lg p-1 shadow-md">
+              <img
+                src={`https://www.notion.com/front-static/agents/tasks/${agent.task}`}
+                alt=""
+                width={18}
+                height={18}
+              />
             </div>
-            </div>
+          </div>
         </div>
-    
-        <div className="absolute left-8 top-48 lg:left-24 lg:top-56 animate-float-delayed hidden md:block z-20">
-            <div className="bg-white rounded-2xl p-3 shadow-xl">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" stroke="#666" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" stroke="#666" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+      ))}
+
+      {/* Conveyor Belt Lines + Gears */}
+      <svg
+        className="absolute inset-0 w-full h-full pointer-events-none"
+        viewBox="0 0 1440 620"
+        fill="none"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        {/* Left path */}
+        <path
+          d="M-10 460 L180 395 C210 385 240 400 240 430 L240 570 C240 590 260 610 280 610 L520 610 C545 610 565 590 565 565 L565 490 C565 435 615 400 665 418 L900 508 C948 525 936 588 888 600 L710 625 C662 638 615 596 615 548 L615 185 C615 148 652 122 690 122 L885 122 C940 122 995 168 995 225 L995 285"
+          stroke="#1e3a8a"
+          strokeWidth="5"
+          strokeLinecap="round"
+          opacity="0.8"
+        />
+        {/* Right path */}
+        <path
+          d="M1450 148 L558 148 C522 148 505 188 524 218 L885 308 C934 320 926 385 878 398 L648 432 C600 445 554 403 554 354 C554 305 508 263 458 270 L205 304 C156 311 110 270 110 220"
+          stroke="#1e3a8a"
+          strokeWidth="5"
+          strokeLinecap="round"
+          opacity="0.8"
+        />
+
+        {/* Gear 1 */}
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 615 122" to="360 615 122" dur="9s" repeatCount="indefinite"/>
+          <path d="M615 105 l2.5 9q2.5 0.5 5 1.3l8-7 5 3-3 9q2 1.6 3.5 3.5l9-3 3 5-7 8q0.8 2.5 1.3 5l9 2.5v6l-9 2.5q-0.5 2.5-1.3 5l7 8-3 5-9-3q-1.6 2-3.5 3.5l3 9-5 3-8-7q-2.5 0.8-5 1.3l-2.5 9h-6l-2.5-9q-2.5-0.5-5-1.3l-8 7-5-3 3-9q-2-1.6-3.5-3.5l-9 3-3-5 7-8q-0.8-2.5-1.3-5l-9-2.5v-6l9-2.5q0.5-2.5 1.3-5l-7-8 3-5 9 3q1.6-2 3.5-3.5l-3-9 5-3 8 7q2.5-0.8 5-1.3z" fill="#1e3a8a" opacity="0.9"/>
+          <circle cx="615" cy="122" r="9" fill="#060b24" opacity="1"/>
+        </g>
+
+        {/* Gear 2 */}
+        <g>
+          <animateTransform attributeName="transform" type="rotate" from="0 995 285" to="-360 995 285" dur="7s" repeatCount="indefinite"/>
+          <path d="M995 268 l2.5 9q2.5 0.5 5 1.3l8-7 5 3-3 9q2 1.6 3.5 3.5l9-3 3 5-7 8q0.8 2.5 1.3 5l9 2.5v6l-9 2.5q-0.5 2.5-1.3 5l7 8-3 5-9-3q-1.6 2-3.5 3.5l3 9-5 3-8-7q-2.5 0.8-5 1.3l-2.5 9h-6l-2.5-9q-2.5-0.5-5-1.3l-8 7-5-3 3-9q-2-1.6-3.5-3.5l-9 3-3-5 7-8q-0.8-2.5-1.3-5l-9-2.5v-6l9-2.5q0.5-2.5 1.3-5l-7-8 3-5 9 3q1.6-2 3.5-3.5l-3-9 5-3 8 7q2.5-0.8 5-1.3z" fill="#1e3a8a" opacity="0.9"/>
+          <circle cx="995" cy="285" r="9" fill="#060b24" opacity="1"/>
+        </g>
+      </svg>
+
+      {/* Main Content */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 tracking-tight leading-tight">
+            Meet the night shift.
+          </h1>
+          <p className="text-lg sm:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Notion agents keep work moving 24/7. They capture knowledge, answer
+            questions, and push projects forward—all while you sleep.
+          </p>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+            <a href="#" className="btn-primary px-8 py-3 text-base">Get Notion free</a>
+            <a href="#" className="bg-transparent border border-white/30 hover:bg-white/10 text-white px-8 py-3 rounded-xl font-medium transition-all text-base">
+              Request a demo
+            </a>
+          </div>
+
+          {/* Hero Image with glow */}
+          <div className="relative max-w-5xl mx-auto">
+            {/* Glow effect */}
+            <div className="absolute -inset-4 rounded-3xl opacity-30 blur-2xl"
+              style={{ background: "radial-gradient(ellipse, #3b5bdb 0%, transparent 70%)" }}
+            />
+            <div className="relative rounded-2xl shadow-2xl overflow-hidden border border-white/10">
+              <img
+                src="/images/hero.webp"
+                alt="Notion Hero"
+                className="w-full h-auto"
+              />
             </div>
+          </div>
         </div>
-    
-        {/* Floating Icons - Right Side */}
-        <div className="absolute right-4 top-20 lg:right-16 lg:top-28 animate-float-delayed hidden md:block z-20">
-            <div className="bg-[#24292e] rounded-2xl p-4 shadow-xl">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                <path fillRule="evenodd" clipRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.341-3.369-1.341-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
-            </svg>
-            </div>
-        </div>
-    
-        <div className="absolute right-8 top-48 lg:right-24 lg:top-56 animate-float hidden md:block z-20">
-            <div className="bg-white rounded-2xl p-3 shadow-xl">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 11L12 14L22 4" stroke="#37a1bf" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="#37a1bf" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            </div>
-        </div>
-    
-        {/* Main Content */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div className="text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 tracking-tight">
-                Meet the night shift.
-            </h1>
-            <p className="text-lg sm:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed">
-                Notion agents keep work moving 24/7. They capture knowledge, answer
-                questions, and push projects forward—all while you sleep.
-            </p>
-    
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
-                <a href="#" className="btn-primary">
-                Get Notion free
-                </a>
-                <a href="#" className="bg-transparent border border-white/30 hover:bg-white/10 text-white px-8 py-3.5 rounded-xl font-medium transition-all text-base">
-                Request a demo
-                </a>
-            </div>
-    
-            {/* Product Screenshot */}
-            <div className="relative max-w-5xl mx-auto">
-                <div className="bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100">
-                {/* Browser Header */}
-                <div className="bg-[#f7f7f7] px-4 py-3 flex items-center border-b border-gray-200">
-                    <div className="flex space-x-2 mr-4">
-                    <div className="w-3 h-3 rounded-full bg-[#ff5f56]" />
-                    <div className="w-3 h-3 rounded-full bg-[#ffbd2e]" />
-                    <div className="w-3 h-3 rounded-full bg-[#27ca40]" />
-                    </div>
-                    <div className="flex-1 flex justify-center">
-                    <div className="flex items-center space-x-3">
-                        <div className="flex items-center text-gray-400">
-                        <span className="mr-3 text-lg">‹</span>
-                        <span className="text-lg">›</span>
-                        </div>
-                        <div className="flex items-center bg-white rounded-lg px-4 py-1.5 text-sm text-gray-600 border shadow-sm">
-                        <span className="flex items-center">
-                            <span className="text-[#37a1bf] mr-2">⚡</span>
-                            Ramp HQ
-                        </span>
-                        <span className="ml-3 text-gray-300">+</span>
-                        </div>
-                    </div>
-                    </div>
-                    <div className="flex items-center space-x-3 text-gray-400 text-sm">
-                    <span>Share</span>
-                    <span className="text-lg">☆</span>
-                    <span className="text-lg">⋯</span>
-                    </div>
-                </div>
-    
-                {/* App Content */}
-                <div className="flex min-h-[400px]">
-                    {/* Sidebar */}
-                    <div className="w-52 bg-[#fbfbfa] border-r border-gray-100 p-3 hidden sm:block">
-                    <div className="flex items-center space-x-2 mb-5 px-2">
-                        <div className="w-6 h-6 bg-gradient-to-br from-[#37a1bf] to-[#2d8ba6] rounded flex items-center justify-center text-white text-xs font-bold">⚡</div>
-                        <span className="font-semibold text-sm text-gray-800">Ramp</span>
-                        <span className="text-gray-400">▾</span>
-                    </div>
-    
-                    <div className="space-y-0.5 text-sm text-gray-600 mb-5">
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                        <span className="text-gray-400 w-4">🔍</span>
-                        <span>Search</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                        <span className="text-gray-400 w-4">🏠</span>
-                        <span>Home</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                        <span className="text-gray-400 w-4">📅</span>
-                        <span>Meetings</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 bg-gray-100 rounded cursor-pointer">
-                        <span className="text-gray-400 w-4">✨</span>
-                        <span>Notion AI</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                        <span className="text-gray-400 w-4">📥</span>
-                        <span>Inbox</span>
-                        </div>
-                    </div>
-    
-                    <div>
-                        <p className="text-[10px] text-gray-400 uppercase tracking-wider px-2 mb-2 font-medium">Agents</p>
-                        <div className="space-y-0.5 text-sm text-gray-600">
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                            <span className="w-2 h-2 bg-amber-400 rounded-full" />
-                            <span>Task routing agent</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                            <span className="w-2 h-2 bg-orange-400 rounded-full" />
-                            <span>Status update agent</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                            <span className="w-2 h-2 bg-violet-400 rounded-full" />
-                            <span>Q&A agent</span>
-                        </div>
-                        <div className="flex items-center space-x-2.5 px-2 py-1.5 hover:bg-gray-100 rounded cursor-pointer">
-                            <span className="w-2 h-2 bg-red-400 rounded-full" />
-                            <span>IT help desk</span>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-    
-                    {/* Main Content */}
-                    <div className="flex-1 p-6 bg-white">
-                    <div className="flex items-center space-x-3 mb-6">
-                        <div className="w-10 h-10 bg-gradient-to-br from-[#37a1bf] to-[#2d8ba6] rounded-lg flex items-center justify-center text-white font-bold text-lg">⚡</div>
-                        <h2 className="text-xl font-bold text-gray-900">Ramp HQ</h2>
-                    </div>
-    
-                    {/* Tabs */}
-                    <div className="flex space-x-1 border-b border-gray-200 mb-5">
-                        <button type="button" className="px-3 py-2 text-sm border-b-2 border-gray-900 font-medium text-gray-900">Company tasks</button>
-                        <button type="button" className="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">My tasks</button>
-                        <button type="button" className="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">Current sprint</button>
-                        <button type="button" className="px-3 py-2 text-sm text-gray-500 hover:text-gray-700">Timeline</button>
-                        <button type="button" className="px-3 py-2 text-sm text-gray-400">+</button>
-                    </div>
-    
-                    {/* Kanban Board */}
-                    <div className="grid grid-cols-4 gap-3">
-                        {/* To-do */}
-                        <div>
-                        <div className="flex items-center space-x-2 mb-3">
-                            <span className="w-2.5 h-2.5 bg-blue-500 rounded-sm" />
-                            <span className="text-sm font-medium text-gray-700">To-do</span>
-                            <span className="text-xs text-gray-400 bg-gray-100 px-1.5 rounded">10</span>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Update help center and office documentation</p>
-                            </div>
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Review campaign assets</p>
-                            </div>
-                        </div>
-                        </div>
-    
-                        {/* In Progress */}
-                        <div>
-                        <div className="flex items-center space-x-2 mb-3">
-                            <span className="w-2.5 h-2.5 bg-amber-400 rounded-sm" />
-                            <span className="text-sm font-medium text-gray-700">In progress</span>
-                            <span className="text-xs text-gray-400 bg-gray-100 px-1.5 rounded">8</span>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Sales demo sync</p>
-                            </div>
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer flex items-center justify-between">
-                            <p className="text-gray-700 leading-snug">Launch demo video</p>
-                            <span className="text-amber-500">🎬</span>
-                            </div>
-                        </div>
-                        </div>
-    
-                        {/* In Review */}
-                        <div>
-                        <div className="flex items-center space-x-2 mb-3">
-                            <span className="w-2.5 h-2.5 bg-violet-400 rounded-sm" />
-                            <span className="text-sm font-medium text-gray-700">In review</span>
-                            <span className="text-xs text-gray-400 bg-gray-100 px-1.5 rounded">3</span>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Weekly sales status report</p>
-                            </div>
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Marketing campaign designs</p>
-                            </div>
-                        </div>
-                        </div>
-    
-                        {/* Complete */}
-                        <div>
-                        <div className="flex items-center space-x-2 mb-3">
-                            <span className="w-2.5 h-2.5 bg-emerald-400 rounded-sm" />
-                            <span className="text-sm font-medium text-gray-700">Complete</span>
-                            <span className="text-xs text-gray-400 bg-gray-100 px-1.5 rounded">24</span>
-                        </div>
-                        <div className="space-y-2">
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Project onboarding</p>
-                            </div>
-                            <div className="bg-white border border-gray-200 rounded-lg p-3 text-sm shadow-sm hover:shadow transition-shadow cursor-pointer">
-                            <p className="text-gray-700 leading-snug">Finalize launch timeline</p>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </section>
-    );
-    }
+      </div>
+    </section>
+  );
+}
