@@ -13,7 +13,6 @@ import superjson from 'superjson';
 import { createTRPCOptionsProxy } from '@trpc/tanstack-react-query';
 
 export const queryClient = new QueryClient();
-const isDev = import.meta.env.MODE === 'development';
 
 const lazyServerLink: TRPCLink<AppRouter> = (runtime) => (ctx) =>
   observable((observer) => {
@@ -29,7 +28,7 @@ export const trpcClient = createTRPCClient<AppRouter>({
   links: [
     loggerLink({
       enabled: (op) =>
-        isDev ||
+        process.env.NODE_ENV === 'development' ||
         (op.direction === 'down' && op.result instanceof Error),
     }),
     splitLink({

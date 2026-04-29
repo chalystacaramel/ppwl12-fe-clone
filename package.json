@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "vite preview",
+    "lint": "tsc -b --pretty --noEmit",
+    "preview": "cd dist && deno run --allow-read=. --allow-net --allow-env ./server/index.ts"
   },
   "keywords": [],
   "author": "",
