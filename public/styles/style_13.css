@@ -1,0 +1,979 @@
+@layer front-ui-foundations {
+  .semanticTypography_semanticTypography__mWJkv {
+    margin-block: 0;
+  }
+  a.semanticTypography_semanticTypography__mWJkv {
+    text-underline-offset: var(--decoration-link-underline-offset);
+    text-decoration-thickness: var(--decoration-link-underline-thickness);
+  }
+  a.semanticTypography_semanticTypography__mWJkv:hover {
+    color: var(--color-link-primary-text-hover);
+    text-decoration: underline;
+  }
+  a.semanticTypography_semanticTypography__mWJkv:focus {
+    color: var(--color-link-primary-text-focus);
+    text-decoration: underline;
+  }
+  a.semanticTypography_semanticTypography__mWJkv:active {
+    color: var(--color-link-primary-text-active);
+    text-decoration: underline;
+  }
+  .semanticTypography_semanticTypography__mWJkv:is(
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    blockquote
+  ) {
+    text-wrap: balance;
+    margin: 0;
+  }
+  .semanticTypography_variantGlobalTitleEmphasis__jfQi4 {
+    font: var(
+      --typography-global-title-emphasis-font-computed,
+      var(--typography-global-title-emphasis-font)
+    );
+    letter-spacing: var(
+      --typography-global-title-emphasis-letter-spacing-computed,
+      var(--typography-global-title-emphasis-letter-spacing)
+    );
+    color: var(--color-text-strong);
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantGlobalTitleEmphasis__jfQi4 {
+      --typography-global-title-emphasis-font-computed: var(
+        --typography-global-title-emphasis-sm-font
+      );
+      --typography-global-title-emphasis-letter-spacing-computed: var(
+        --typography-global-title-emphasis-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantGlobalTitleEmphasis__jfQi4 {
+      --typography-global-title-emphasis-font-computed: var(
+        --typography-global-title-emphasis-md-font,
+        var(--typography-global-title-emphasis-sm-font)
+      );
+      --typography-global-title-emphasis-letter-spacing-computed: var(
+        --typography-global-title-emphasis-md-letter-spacing,
+        var(--typography-global-title-emphasis-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantGlobalTitleEmphasis__jfQi4 {
+      --typography-global-title-emphasis-font-computed: var(
+        --typography-global-title-emphasis-lg-font,
+        var(
+          --typography-global-title-emphasis-md-font,
+          var(--typography-global-title-emphasis-sm-font)
+        )
+      );
+      --typography-global-title-emphasis-letter-spacing-computed: var(
+        --typography-global-title-emphasis-lg-letter-spacing,
+        var(
+          --typography-global-title-emphasis-md-letter-spacing,
+          var(--typography-global-title-emphasis-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantGlobalTitleEmphasis__jfQi4 {
+      --typography-global-title-emphasis-font-computed: var(
+        --typography-global-title-emphasis-xl-font,
+        var(
+          --typography-global-title-emphasis-lg-font,
+          var(
+            --typography-global-title-emphasis-md-font,
+            var(--typography-global-title-emphasis-sm-font)
+          )
+        )
+      );
+      --typography-global-title-emphasis-letter-spacing-computed: var(
+        --typography-global-title-emphasis-xl-letter-spacing,
+        var(
+          --typography-global-title-emphasis-lg-letter-spacing,
+          var(
+            --typography-global-title-emphasis-md-letter-spacing,
+            var(--typography-global-title-emphasis-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantGlobalTitleEmphasis__jfQi4 {
+      --typography-global-title-emphasis-font-computed: var(
+        --typography-global-title-emphasis-xxl-font,
+        var(
+          --typography-global-title-emphasis-xl-font,
+          var(
+            --typography-global-title-emphasis-lg-font,
+            var(
+              --typography-global-title-emphasis-md-font,
+              var(--typography-global-title-emphasis-sm-font)
+            )
+          )
+        )
+      );
+      --typography-global-title-emphasis-letter-spacing-computed: var(
+        --typography-global-title-emphasis-xxl-letter-spacing,
+        var(
+          --typography-global-title-emphasis-xl-letter-spacing,
+          var(
+            --typography-global-title-emphasis-lg-letter-spacing,
+            var(
+              --typography-global-title-emphasis-md-letter-spacing,
+              var(--typography-global-title-emphasis-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantGlobalContext__VDlwW {
+    font: var(
+      --typography-global-context-font-computed,
+      var(--typography-global-context-font)
+    );
+    letter-spacing: var(
+      --typography-global-context-letter-spacing-computed,
+      var(--typography-global-context-letter-spacing)
+    );
+    color: var(--color-text-muted);
+    text-wrap: pretty;
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantGlobalContext__VDlwW {
+      --typography-global-context-font-computed: var(
+        --typography-global-context-sm-font
+      );
+      --typography-global-context-letter-spacing-computed: var(
+        --typography-global-context-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantGlobalContext__VDlwW {
+      --typography-global-context-font-computed: var(
+        --typography-global-context-md-font,
+        var(--typography-global-context-sm-font)
+      );
+      --typography-global-context-letter-spacing-computed: var(
+        --typography-global-context-md-letter-spacing,
+        var(--typography-global-context-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantGlobalContext__VDlwW {
+      --typography-global-context-font-computed: var(
+        --typography-global-context-lg-font,
+        var(
+          --typography-global-context-md-font,
+          var(--typography-global-context-sm-font)
+        )
+      );
+      --typography-global-context-letter-spacing-computed: var(
+        --typography-global-context-lg-letter-spacing,
+        var(
+          --typography-global-context-md-letter-spacing,
+          var(--typography-global-context-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantGlobalContext__VDlwW {
+      --typography-global-context-font-computed: var(
+        --typography-global-context-xl-font,
+        var(
+          --typography-global-context-lg-font,
+          var(
+            --typography-global-context-md-font,
+            var(--typography-global-context-sm-font)
+          )
+        )
+      );
+      --typography-global-context-letter-spacing-computed: var(
+        --typography-global-context-xl-letter-spacing,
+        var(
+          --typography-global-context-lg-letter-spacing,
+          var(
+            --typography-global-context-md-letter-spacing,
+            var(--typography-global-context-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantGlobalContext__VDlwW {
+      --typography-global-context-font-computed: var(
+        --typography-global-context-xxl-font,
+        var(
+          --typography-global-context-xl-font,
+          var(
+            --typography-global-context-lg-font,
+            var(
+              --typography-global-context-md-font,
+              var(--typography-global-context-sm-font)
+            )
+          )
+        )
+      );
+      --typography-global-context-letter-spacing-computed: var(
+        --typography-global-context-xxl-letter-spacing,
+        var(
+          --typography-global-context-xl-letter-spacing,
+          var(
+            --typography-global-context-lg-letter-spacing,
+            var(
+              --typography-global-context-md-letter-spacing,
+              var(--typography-global-context-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantGlobalBody__yYPP0 {
+    font: var(
+      --typography-global-body-font-computed,
+      var(--typography-global-body-font)
+    );
+    letter-spacing: var(
+      --typography-global-body-letter-spacing-computed,
+      var(--typography-global-body-letter-spacing)
+    );
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantGlobalBody__yYPP0 {
+      --typography-global-body-font-computed: var(
+        --typography-global-body-sm-font
+      );
+      --typography-global-body-letter-spacing-computed: var(
+        --typography-global-body-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantGlobalBody__yYPP0 {
+      --typography-global-body-font-computed: var(
+        --typography-global-body-md-font,
+        var(--typography-global-body-sm-font)
+      );
+      --typography-global-body-letter-spacing-computed: var(
+        --typography-global-body-md-letter-spacing,
+        var(--typography-global-body-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantGlobalBody__yYPP0 {
+      --typography-global-body-font-computed: var(
+        --typography-global-body-lg-font,
+        var(
+          --typography-global-body-md-font,
+          var(--typography-global-body-sm-font)
+        )
+      );
+      --typography-global-body-letter-spacing-computed: var(
+        --typography-global-body-lg-letter-spacing,
+        var(
+          --typography-global-body-md-letter-spacing,
+          var(--typography-global-body-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantGlobalBody__yYPP0 {
+      --typography-global-body-font-computed: var(
+        --typography-global-body-xl-font,
+        var(
+          --typography-global-body-lg-font,
+          var(
+            --typography-global-body-md-font,
+            var(--typography-global-body-sm-font)
+          )
+        )
+      );
+      --typography-global-body-letter-spacing-computed: var(
+        --typography-global-body-xl-letter-spacing,
+        var(
+          --typography-global-body-lg-letter-spacing,
+          var(
+            --typography-global-body-md-letter-spacing,
+            var(--typography-global-body-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantGlobalBody__yYPP0 {
+      --typography-global-body-font-computed: var(
+        --typography-global-body-xxl-font,
+        var(
+          --typography-global-body-xl-font,
+          var(
+            --typography-global-body-lg-font,
+            var(
+              --typography-global-body-md-font,
+              var(--typography-global-body-sm-font)
+            )
+          )
+        )
+      );
+      --typography-global-body-letter-spacing-computed: var(
+        --typography-global-body-xxl-letter-spacing,
+        var(
+          --typography-global-body-xl-letter-spacing,
+          var(
+            --typography-global-body-lg-letter-spacing,
+            var(
+              --typography-global-body-md-letter-spacing,
+              var(--typography-global-body-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantGlobalCaption__fFXUL {
+    font: var(
+      --typography-global-caption-font-computed,
+      var(--typography-global-caption-font)
+    );
+    letter-spacing: var(
+      --typography-global-caption-letter-spacing-computed,
+      var(--typography-global-caption-letter-spacing)
+    );
+    color: var(--color-text-normal);
+    text-wrap: pretty;
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantGlobalCaption__fFXUL {
+      --typography-global-caption-font-computed: var(
+        --typography-global-caption-sm-font
+      );
+      --typography-global-caption-letter-spacing-computed: var(
+        --typography-global-caption-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantGlobalCaption__fFXUL {
+      --typography-global-caption-font-computed: var(
+        --typography-global-caption-md-font,
+        var(--typography-global-caption-sm-font)
+      );
+      --typography-global-caption-letter-spacing-computed: var(
+        --typography-global-caption-md-letter-spacing,
+        var(--typography-global-caption-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantGlobalCaption__fFXUL {
+      --typography-global-caption-font-computed: var(
+        --typography-global-caption-lg-font,
+        var(
+          --typography-global-caption-md-font,
+          var(--typography-global-caption-sm-font)
+        )
+      );
+      --typography-global-caption-letter-spacing-computed: var(
+        --typography-global-caption-lg-letter-spacing,
+        var(
+          --typography-global-caption-md-letter-spacing,
+          var(--typography-global-caption-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantGlobalCaption__fFXUL {
+      --typography-global-caption-font-computed: var(
+        --typography-global-caption-xl-font,
+        var(
+          --typography-global-caption-lg-font,
+          var(
+            --typography-global-caption-md-font,
+            var(--typography-global-caption-sm-font)
+          )
+        )
+      );
+      --typography-global-caption-letter-spacing-computed: var(
+        --typography-global-caption-xl-letter-spacing,
+        var(
+          --typography-global-caption-lg-letter-spacing,
+          var(
+            --typography-global-caption-md-letter-spacing,
+            var(--typography-global-caption-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantGlobalCaption__fFXUL {
+      --typography-global-caption-font-computed: var(
+        --typography-global-caption-xxl-font,
+        var(
+          --typography-global-caption-xl-font,
+          var(
+            --typography-global-caption-lg-font,
+            var(
+              --typography-global-caption-md-font,
+              var(--typography-global-caption-sm-font)
+            )
+          )
+        )
+      );
+      --typography-global-caption-letter-spacing-computed: var(
+        --typography-global-caption-xxl-letter-spacing,
+        var(
+          --typography-global-caption-xl-letter-spacing,
+          var(
+            --typography-global-caption-lg-letter-spacing,
+            var(
+              --typography-global-caption-md-letter-spacing,
+              var(--typography-global-caption-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantGlobalQuote__cJpu2 {
+    font: var(
+      --typography-global-quote-font-computed,
+      var(--typography-global-quote-font)
+    );
+    letter-spacing: var(
+      --typography-global-quote-letter-spacing-computed,
+      var(--typography-global-quote-letter-spacing)
+    );
+    color: var(--color-text-strong);
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantGlobalQuote__cJpu2 {
+      --typography-global-quote-font-computed: var(
+        --typography-global-quote-sm-font
+      );
+      --typography-global-quote-letter-spacing-computed: var(
+        --typography-global-quote-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantGlobalQuote__cJpu2 {
+      --typography-global-quote-font-computed: var(
+        --typography-global-quote-md-font,
+        var(--typography-global-quote-sm-font)
+      );
+      --typography-global-quote-letter-spacing-computed: var(
+        --typography-global-quote-md-letter-spacing,
+        var(--typography-global-quote-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantGlobalQuote__cJpu2 {
+      --typography-global-quote-font-computed: var(
+        --typography-global-quote-lg-font,
+        var(
+          --typography-global-quote-md-font,
+          var(--typography-global-quote-sm-font)
+        )
+      );
+      --typography-global-quote-letter-spacing-computed: var(
+        --typography-global-quote-lg-letter-spacing,
+        var(
+          --typography-global-quote-md-letter-spacing,
+          var(--typography-global-quote-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantGlobalQuote__cJpu2 {
+      --typography-global-quote-font-computed: var(
+        --typography-global-quote-xl-font,
+        var(
+          --typography-global-quote-lg-font,
+          var(
+            --typography-global-quote-md-font,
+            var(--typography-global-quote-sm-font)
+          )
+        )
+      );
+      --typography-global-quote-letter-spacing-computed: var(
+        --typography-global-quote-xl-letter-spacing,
+        var(
+          --typography-global-quote-lg-letter-spacing,
+          var(
+            --typography-global-quote-md-letter-spacing,
+            var(--typography-global-quote-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantGlobalQuote__cJpu2 {
+      --typography-global-quote-font-computed: var(
+        --typography-global-quote-xxl-font,
+        var(
+          --typography-global-quote-xl-font,
+          var(
+            --typography-global-quote-lg-font,
+            var(
+              --typography-global-quote-md-font,
+              var(--typography-global-quote-sm-font)
+            )
+          )
+        )
+      );
+      --typography-global-quote-letter-spacing-computed: var(
+        --typography-global-quote-xxl-letter-spacing,
+        var(
+          --typography-global-quote-xl-letter-spacing,
+          var(
+            --typography-global-quote-lg-letter-spacing,
+            var(
+              --typography-global-quote-md-letter-spacing,
+              var(--typography-global-quote-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantInteractionButtonMedium__HCJEu {
+    font: var(
+      --typography-interaction-button-medium-font-computed,
+      var(--typography-interaction-button-medium-font)
+    );
+    letter-spacing: var(
+      --typography-interaction-button-medium-letter-spacing-computed,
+      var(--typography-interaction-button-medium-letter-spacing)
+    );
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantInteractionButtonMedium__HCJEu {
+      --typography-interaction-button-medium-font-computed: var(
+        --typography-interaction-button-medium-sm-font
+      );
+      --typography-interaction-button-medium-letter-spacing-computed: var(
+        --typography-interaction-button-medium-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantInteractionButtonMedium__HCJEu {
+      --typography-interaction-button-medium-font-computed: var(
+        --typography-interaction-button-medium-md-font,
+        var(--typography-interaction-button-medium-sm-font)
+      );
+      --typography-interaction-button-medium-letter-spacing-computed: var(
+        --typography-interaction-button-medium-md-letter-spacing,
+        var(--typography-interaction-button-medium-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantInteractionButtonMedium__HCJEu {
+      --typography-interaction-button-medium-font-computed: var(
+        --typography-interaction-button-medium-lg-font,
+        var(
+          --typography-interaction-button-medium-md-font,
+          var(--typography-interaction-button-medium-sm-font)
+        )
+      );
+      --typography-interaction-button-medium-letter-spacing-computed: var(
+        --typography-interaction-button-medium-lg-letter-spacing,
+        var(
+          --typography-interaction-button-medium-md-letter-spacing,
+          var(--typography-interaction-button-medium-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantInteractionButtonMedium__HCJEu {
+      --typography-interaction-button-medium-font-computed: var(
+        --typography-interaction-button-medium-xl-font,
+        var(
+          --typography-interaction-button-medium-lg-font,
+          var(
+            --typography-interaction-button-medium-md-font,
+            var(--typography-interaction-button-medium-sm-font)
+          )
+        )
+      );
+      --typography-interaction-button-medium-letter-spacing-computed: var(
+        --typography-interaction-button-medium-xl-letter-spacing,
+        var(
+          --typography-interaction-button-medium-lg-letter-spacing,
+          var(
+            --typography-interaction-button-medium-md-letter-spacing,
+            var(--typography-interaction-button-medium-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantInteractionButtonMedium__HCJEu {
+      --typography-interaction-button-medium-font-computed: var(
+        --typography-interaction-button-medium-xxl-font,
+        var(
+          --typography-interaction-button-medium-xl-font,
+          var(
+            --typography-interaction-button-medium-lg-font,
+            var(
+              --typography-interaction-button-medium-md-font,
+              var(--typography-interaction-button-medium-sm-font)
+            )
+          )
+        )
+      );
+      --typography-interaction-button-medium-letter-spacing-computed: var(
+        --typography-interaction-button-medium-xxl-letter-spacing,
+        var(
+          --typography-interaction-button-medium-xl-letter-spacing,
+          var(
+            --typography-interaction-button-medium-lg-letter-spacing,
+            var(
+              --typography-interaction-button-medium-md-letter-spacing,
+              var(--typography-interaction-button-medium-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantCardTitle__nqcQy {
+    font: var(
+      --typography-card-title-font-computed,
+      var(--typography-card-title-font)
+    );
+    letter-spacing: var(
+      --typography-card-title-letter-spacing-computed,
+      var(--typography-card-title-letter-spacing)
+    );
+    color: var(--color-card-title-text);
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantCardTitle__nqcQy {
+      --typography-card-title-font-computed: var(
+        --typography-card-title-sm-font
+      );
+      --typography-card-title-letter-spacing-computed: var(
+        --typography-card-title-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantCardTitle__nqcQy {
+      --typography-card-title-font-computed: var(
+        --typography-card-title-md-font,
+        var(--typography-card-title-sm-font)
+      );
+      --typography-card-title-letter-spacing-computed: var(
+        --typography-card-title-md-letter-spacing,
+        var(--typography-card-title-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantCardTitle__nqcQy {
+      --typography-card-title-font-computed: var(
+        --typography-card-title-lg-font,
+        var(
+          --typography-card-title-md-font,
+          var(--typography-card-title-sm-font)
+        )
+      );
+      --typography-card-title-letter-spacing-computed: var(
+        --typography-card-title-lg-letter-spacing,
+        var(
+          --typography-card-title-md-letter-spacing,
+          var(--typography-card-title-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantCardTitle__nqcQy {
+      --typography-card-title-font-computed: var(
+        --typography-card-title-xl-font,
+        var(
+          --typography-card-title-lg-font,
+          var(
+            --typography-card-title-md-font,
+            var(--typography-card-title-sm-font)
+          )
+        )
+      );
+      --typography-card-title-letter-spacing-computed: var(
+        --typography-card-title-xl-letter-spacing,
+        var(
+          --typography-card-title-lg-letter-spacing,
+          var(
+            --typography-card-title-md-letter-spacing,
+            var(--typography-card-title-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantCardTitle__nqcQy {
+      --typography-card-title-font-computed: var(
+        --typography-card-title-xxl-font,
+        var(
+          --typography-card-title-xl-font,
+          var(
+            --typography-card-title-lg-font,
+            var(
+              --typography-card-title-md-font,
+              var(--typography-card-title-sm-font)
+            )
+          )
+        )
+      );
+      --typography-card-title-letter-spacing-computed: var(
+        --typography-card-title-xxl-letter-spacing,
+        var(
+          --typography-card-title-xl-letter-spacing,
+          var(
+            --typography-card-title-lg-letter-spacing,
+            var(
+              --typography-card-title-md-letter-spacing,
+              var(--typography-card-title-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantCardTitleSummary__lvrMk {
+    font: var(
+      --typography-card-title-summary-font-computed,
+      var(--typography-card-title-summary-font)
+    );
+    letter-spacing: var(
+      --typography-card-title-summary-letter-spacing-computed,
+      var(--typography-card-title-summary-letter-spacing)
+    );
+    color: var(--color-card-title-text);
+    text-wrap: pretty;
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantCardTitleSummary__lvrMk {
+      --typography-card-title-summary-font-computed: var(
+        --typography-card-title-summary-sm-font
+      );
+      --typography-card-title-summary-letter-spacing-computed: var(
+        --typography-card-title-summary-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantCardTitleSummary__lvrMk {
+      --typography-card-title-summary-font-computed: var(
+        --typography-card-title-summary-md-font,
+        var(--typography-card-title-summary-sm-font)
+      );
+      --typography-card-title-summary-letter-spacing-computed: var(
+        --typography-card-title-summary-md-letter-spacing,
+        var(--typography-card-title-summary-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantCardTitleSummary__lvrMk {
+      --typography-card-title-summary-font-computed: var(
+        --typography-card-title-summary-lg-font,
+        var(
+          --typography-card-title-summary-md-font,
+          var(--typography-card-title-summary-sm-font)
+        )
+      );
+      --typography-card-title-summary-letter-spacing-computed: var(
+        --typography-card-title-summary-lg-letter-spacing,
+        var(
+          --typography-card-title-summary-md-letter-spacing,
+          var(--typography-card-title-summary-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantCardTitleSummary__lvrMk {
+      --typography-card-title-summary-font-computed: var(
+        --typography-card-title-summary-xl-font,
+        var(
+          --typography-card-title-summary-lg-font,
+          var(
+            --typography-card-title-summary-md-font,
+            var(--typography-card-title-summary-sm-font)
+          )
+        )
+      );
+      --typography-card-title-summary-letter-spacing-computed: var(
+        --typography-card-title-summary-xl-letter-spacing,
+        var(
+          --typography-card-title-summary-lg-letter-spacing,
+          var(
+            --typography-card-title-summary-md-letter-spacing,
+            var(--typography-card-title-summary-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantCardTitleSummary__lvrMk {
+      --typography-card-title-summary-font-computed: var(
+        --typography-card-title-summary-xxl-font,
+        var(
+          --typography-card-title-summary-xl-font,
+          var(
+            --typography-card-title-summary-lg-font,
+            var(
+              --typography-card-title-summary-md-font,
+              var(--typography-card-title-summary-sm-font)
+            )
+          )
+        )
+      );
+      --typography-card-title-summary-letter-spacing-computed: var(
+        --typography-card-title-summary-xxl-letter-spacing,
+        var(
+          --typography-card-title-summary-xl-letter-spacing,
+          var(
+            --typography-card-title-summary-lg-letter-spacing,
+            var(
+              --typography-card-title-summary-md-letter-spacing,
+              var(--typography-card-title-summary-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+  .semanticTypography_variantCardBodySummary__7ucTw {
+    font: var(
+      --typography-card-body-summary-font-computed,
+      var(--typography-card-body-summary-font)
+    );
+    letter-spacing: var(
+      --typography-card-body-summary-letter-spacing-computed,
+      var(--typography-card-body-summary-letter-spacing)
+    );
+    text-wrap: pretty;
+  }
+  @media (min-width: 600px) {
+    .semanticTypography_variantCardBodySummary__7ucTw {
+      --typography-card-body-summary-font-computed: var(
+        --typography-card-body-summary-sm-font
+      );
+      --typography-card-body-summary-letter-spacing-computed: var(
+        --typography-card-body-summary-sm-letter-spacing
+      );
+    }
+  }
+  @media (min-width: 840px) {
+    .semanticTypography_variantCardBodySummary__7ucTw {
+      --typography-card-body-summary-font-computed: var(
+        --typography-card-body-summary-md-font,
+        var(--typography-card-body-summary-sm-font)
+      );
+      --typography-card-body-summary-letter-spacing-computed: var(
+        --typography-card-body-summary-md-letter-spacing,
+        var(--typography-card-body-summary-sm-letter-spacing)
+      );
+    }
+  }
+  @media (min-width: 1080px) {
+    .semanticTypography_variantCardBodySummary__7ucTw {
+      --typography-card-body-summary-font-computed: var(
+        --typography-card-body-summary-lg-font,
+        var(
+          --typography-card-body-summary-md-font,
+          var(--typography-card-body-summary-sm-font)
+        )
+      );
+      --typography-card-body-summary-letter-spacing-computed: var(
+        --typography-card-body-summary-lg-letter-spacing,
+        var(
+          --typography-card-body-summary-md-letter-spacing,
+          var(--typography-card-body-summary-sm-letter-spacing)
+        )
+      );
+    }
+  }
+  @media (min-width: 1280px) {
+    .semanticTypography_variantCardBodySummary__7ucTw {
+      --typography-card-body-summary-font-computed: var(
+        --typography-card-body-summary-xl-font,
+        var(
+          --typography-card-body-summary-lg-font,
+          var(
+            --typography-card-body-summary-md-font,
+            var(--typography-card-body-summary-sm-font)
+          )
+        )
+      );
+      --typography-card-body-summary-letter-spacing-computed: var(
+        --typography-card-body-summary-xl-letter-spacing,
+        var(
+          --typography-card-body-summary-lg-letter-spacing,
+          var(
+            --typography-card-body-summary-md-letter-spacing,
+            var(--typography-card-body-summary-sm-letter-spacing)
+          )
+        )
+      );
+    }
+  }
+  @media (min-width: 1440px) {
+    .semanticTypography_variantCardBodySummary__7ucTw {
+      --typography-card-body-summary-font-computed: var(
+        --typography-card-body-summary-xxl-font,
+        var(
+          --typography-card-body-summary-xl-font,
+          var(
+            --typography-card-body-summary-lg-font,
+            var(
+              --typography-card-body-summary-md-font,
+              var(--typography-card-body-summary-sm-font)
+            )
+          )
+        )
+      );
+      --typography-card-body-summary-letter-spacing-computed: var(
+        --typography-card-body-summary-xxl-letter-spacing,
+        var(
+          --typography-card-body-summary-xl-letter-spacing,
+          var(
+            --typography-card-body-summary-lg-letter-spacing,
+            var(
+              --typography-card-body-summary-md-letter-spacing,
+              var(--typography-card-body-summary-sm-letter-spacing)
+            )
+          )
+        )
+      );
+    }
+  }
+}
