@@ -1,41 +1,14 @@
-import { createBrowserRouter } from "react-router-dom";
-import Page1 from "./pages/Page1";
-import Page2 from "./pages/Page2";
-import PageExample from "./pages/PageExample";
-import { Footer } from "./components/Footer";
+// src/router.tsx
+import { createRouter } from '@tanstack/react-router';
+import { routeTree } from './routeTree.gen';
+import { NotFound } from './components/ui/not-found';
 
-function RootLayout({ children }: { children: React.ReactNode }) {
-  return (
-    <>
-      {children}
-      <Footer />
-    </>
-  );
+export function getRouter() {
+  const router = createRouter({
+    routeTree,
+    scrollRestoration: true,
+    defaultNotFoundComponent: NotFound,
+  });
+
+  return router;
 }
-
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <RootLayout>
-        <Page1 />
-      </RootLayout>
-    ),
-  },
-  {
-    path: "/page-2",
-    element: (
-      <RootLayout>
-        <Page2 />
-      </RootLayout>
-    ),
-  },
-  {
-    path: "/page-example",
-    element: (
-      <RootLayout>
-        <PageExample />
-      </RootLayout>
-    ),
-  },
-]);
