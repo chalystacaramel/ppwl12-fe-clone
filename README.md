@@ -8,7 +8,7 @@ Kelas Praktikum Pemograman Web Lanjut 2026 (Sistem Informasi/UNTAN). Minggu ke-1
 > Gunakan file `README.md` ini sebagai laporan. Isi laporan berupa nama tim & page yang tiap anggota handle. 
 
 **Class A / Team 1**
-
+Live site: https://kelompoksatu.ct.ws
 Main Web: [notion.com](https://www.notion.com/)
 
 |        Name       |    NIM     | Reference Page | Spesific Component |
