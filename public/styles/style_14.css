@@ -1,0 +1,67 @@
+@layer front-ui-components {
+  .accreditation_accreditation___0Fyv {
+    --avatar-size: var(--spacing-24);
+    --logo-size: var(--spacing-32);
+    color: var(--color-text-muted);
+    position: relative;
+  }
+}
+@layer front-ui-components {
+  .accreditation_accreditation___0Fyv:has(.accreditation_logo__zDy_d) {
+    display: flex;
+  }
+  .accreditation_logo__zDy_d {
+    max-block-size: var(--logo-size);
+    margin-block: calc((var(--logo-size) - 1lh) / -2);
+    margin-inline-end: var(--spacing-8);
+  }
+  .accreditation_logo__zDy_d img {
+    max-block-size: var(--logo-size);
+    inline-size: auto;
+    display: block;
+  }
+  .accreditation_column__k8wDl {
+    --align: center;
+    align-items: var(--align);
+    flex-direction: column;
+    text-align: var(--align);
+  }
+  .accreditation_column__k8wDl .accreditation_logo__zDy_d {
+    margin: unset;
+    position: relative;
+    transform: unset;
+    inset-block-start: unset;
+  }
+  .quote_quote__Xm7_A {
+    --align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--spacing-16);
+    align-items: var(--align);
+  }
+  .quote_quoteAlignStart__d5VQd {
+    --align: start;
+  }
+  .quote_quoteAlignStart__d5VQd .quote_blockquote__l8_UC {
+    hanging-punctuation: first;
+  }
+}
+@layer front-ui-components {
+  @supports not (hanging-punctuation: first) {
+    .quote_quoteAlignStart__d5VQd .quote_blockquote__l8_UC {
+      text-indent: -0.8ch;
+    }
+  }
+  .quote_blockquote__l8_UC {
+    margin: 0;
+    inline-size: 100%;
+    text-align: var(--align);
+  }
+  .quote_blockquote__l8_UC:before {
+    content: open-quote;
+  }
+  .quote_blockquote__l8_UC:after {
+    content: close-quote;
+  }
+}
