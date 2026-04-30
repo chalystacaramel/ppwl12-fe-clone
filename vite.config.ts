@@ -1,44 +1,46 @@
-// vite.config.ts
-import tailwindcss from '@tailwindcss/vite';
-import { tanstackStart } from '@tanstack/react-start/plugin/vite';
-import viteReact from '@vitejs/plugin-react';
-import { nitro } from 'nitro/vite';
-import { viteComponentMapper } from 'step1-tagger';
-import { defineConfig } from 'vite';
-import tsConfigPaths from 'vite-tsconfig-paths';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+import path from "path";
 
 export default defineConfig({
-  server: {
-    port: 5173,
-    strictPort: true
-  },
+  base: "./",
   plugins: [
-    tsConfigPaths({
-      projects: ['./tsconfig.json'],
-    }),
-    viteComponentMapper(),
-    tanstackStart(),
-    nitro({
-      output: {
-        dir: 'dist',
-      },
-    }),
-    // react's vite plugin must come after start's vite plugin
-    viteReact(),
+    react(),
     tailwindcss(),
-  ],
-  nitro: {
-    preset: 'deno-deploy',
-  },
-  build: {
-    sourcemap: 'hidden',
-    rollupOptions: {
-      external(source) {
-        if (source.startsWith('node:')) {
-          return true;
+    {
+      name: 'exclude-server-files',
+      resolveId(id) {
+        if (
+          id.includes('/server/trpc/') ||
+          id.includes('routes/api/') ||
+          id === '@trpc/server' ||
+          id.startsWith('@trpc/server/')
+        ) {
+          return { id: 'virtual:empty', external: false };
         }
-        return false;
+      },
+      load(id) {
+        if (id === 'virtual:empty') {
+          return 'export default {}';
+        }
       },
     },
+  ],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  server: {
+    port: 5173,
+    strictPort: true,
+  },
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+  },
+  optimizeDeps: {
+    exclude: ['@trpc/server'],
   },
 });

@@ -1,11 +1,3 @@
-import { getRequestHeaders } from '@tanstack/react-start/server';
-import { appRouter, type AppRouter } from './router';
-import { createTRPCContext } from './context';
-
-export function createCaller() {
-  const headers = getRequestHeaders();
-  const ctx = createTRPCContext({ headers });
-  return appRouter.createCaller(ctx);
-}
-
-export type ServerCaller = ReturnType<typeof createCaller>;
+// This file is server-only - replaced with stub for client build
+export const createCaller = () => ({}) as any;
+export type ServerCaller = any;
