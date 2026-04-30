@@ -1,109 +1,39 @@
-/// <reference types="vite/client" />
-import { Outlet, createRootRoute, Scripts } from '@tanstack/react-router';
-
-import globalCss from '@/styles/global.css?url';
-import { TrpcProvider } from '@/client/trpc/provider';
+import { Outlet, createRootRoute } from '@tanstack/react-router';
+import { useEffect } from 'react';
 
 export const Route = createRootRoute({
   component: RootDocument,
 });
 
 function RootDocument() {
-  return (
-    <html className="notion-light-theme base_theme__K5IIh homepage_noXScroll__ii6jk" lang="en">
-      <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta
-          name="description"
-          content="Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
-        />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@NotionHQ" />
-        <meta
-          name="twitter:title"
-          content="The AI workspace that works for you. | Notion"
-        />
-        <meta
-          name="twitter:description"
-          content="Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
-        />
-        <meta
-          name="twitter:image"
-          content="https://www.notion.com/front-static/meta/custom-agents-og.png"
-        />
-        <meta property="og:url" content="https://www.notion.com/" />
-        <meta
-          property="og:title"
-          content="The AI workspace that works for you. | Notion"
-        />
-        <meta
-          property="og:description"
-          content="Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster."
-        />
-        <meta
-          property="og:image"
-          content="https://www.notion.com/front-static/meta/custom-agents-og.png"
-        />
-        <meta property="og:locale" content="en-US" />
-        <meta property="og:site_name" content="Notion" />
-        <meta property="og:type" content="website" />
-        <meta name="mobile-web-app-capable" content="yes" />
-        <meta name="apple-itunes-app" content="1232780281" />
-        <meta
-          name="naver-site-verification"
-          content="ad5c9c7e4607a86395226000f5fe1e4223ce3348"
-        />
-        <meta name="twitter:url" content="/" />
-        <meta name="next-head-count" content="44" />
-        <meta content='{"frontProductPage.logoSection.title":"Trusted by teams at"}' />
-        <meta name="referrer" content="no-referrer" />
-        <link rel="alternate" href="https://www.notion.com/" />
-        <link rel="alternate" href="https://www.notion.com/ko" />
-        <link rel="alternate" href="https://www.notion.com/ja" />
-        <link rel="alternate" href="https://www.notion.com/fr" />
-        <link rel="alternate" href="https://www.notion.com/de" />
-        <link rel="alternate" href="https://www.notion.com/es-es" />
-        <link rel="alternate" href="https://www.notion.com/es" />
-        <link rel="alternate" href="https://www.notion.com/pt" />
-        <link rel="alternate" href="https://www.notion.com/zh-cn" />
-        <link rel="alternate" href="https://www.notion.com/zh-tw" />
-        <link rel="alternate" href="https://www.notion.com/en-gb" />
-        <link rel="alternate" href="https://www.notion.com/id" />
-        <link rel="alternate" href="https://www.notion.com/vi" />
-        <link rel="alternate" href="https://www.notion.com/th" />
-        <link rel="alternate" href="https://www.notion.com/he" />
-        <link rel="alternate" href="https://www.notion.com/ar" />
-        <link rel="icon" href="https://static.step1.dev/vogxpj/assets/b57faa414074.ico" />
-        <link rel="stylesheet" href="/home/styles/style_15.css" />
-        <link rel="stylesheet" href="/home/styles/style_04.css" />
-        <link rel="stylesheet" href="/home/styles/style_06.css" />
-        <link rel="stylesheet" href="/home/styles/style_11.css" />
-        <link rel="stylesheet" href="/home/styles/style_14.css" />
-        <link rel="stylesheet" href="/home/styles/style_09.css" />
-        <link rel="stylesheet" href="/home/styles/style_12.css" />
-        <link rel="stylesheet" href="/home/styles/style_13.css" />
-        <link rel="stylesheet" href="/home/styles/style_10.css" />
-        <link rel="stylesheet" href="/home/styles/style_01.css" />
-        <link rel="stylesheet" href="/home/styles/style_05.css" />
-        <link rel="stylesheet" href="/home/styles/style_07.css" />
-        <link rel="stylesheet" href="/home/styles/style_08.css" />
-        <link rel="stylesheet" href="/home/styles/style_02.css" />
-        <link rel="stylesheet" href="/home/styles/style_03.css" />
-        <link rel="stylesheet" href="/home/styles/merged_styles.css" />
-        <title>The AI workspace that works for you. | Notion</title>
-        <link rel="stylesheet" href={globalCss} />
-        <link rel="icon" href="favicon.png" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
-      </head>
-      <body>
-        <TrpcProvider>
-          <Outlet />
-        </TrpcProvider>
-        <Scripts />
-      </body>
-    </html>
-  );
+  useEffect(() => {
+    const styles = [
+      '/home/styles/style_15.css',
+      '/home/styles/style_04.css',
+      '/home/styles/style_06.css',
+      '/home/styles/style_11.css',
+      '/home/styles/style_14.css',
+      '/home/styles/style_09.css',
+      '/home/styles/style_12.css',
+      '/home/styles/style_13.css',
+      '/home/styles/style_10.css',
+      '/home/styles/style_01.css',
+      '/home/styles/style_05.css',
+      '/home/styles/style_07.css',
+      '/home/styles/style_08.css',
+      '/home/styles/style_02.css',
+      '/home/styles/style_03.css',
+      '/home/styles/merged_styles.css',
+    ];
+    styles.forEach((href) => {
+      if (!document.querySelector(`link[href="${href}"]`)) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    });
+  }, []);
+
+  return <Outlet />;
 }

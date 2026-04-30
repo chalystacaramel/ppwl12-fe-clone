@@ -1,9 +1,3 @@
-import { initTRPC } from '@trpc/server';
-import superjson from 'superjson';
-import { type TRPCContext } from './context';
-
-export const t = initTRPC.context<TRPCContext>().create({
-  transformer: superjson,
-});
-
-export const createTRPCRouter = t.router;
+// This file is server-only - replaced with stub for client build
+export const t = {} as any;
+export const createTRPCRouter = (() => {}) as any;
