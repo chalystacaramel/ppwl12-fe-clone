@@ -13,7 +13,7 @@ Class A / Team 1 Live site: https://kelompoksatu.ct.ws Main Web: notion.com
 
 |        Name       |    NIM     | Reference Page | Spesific Component |
 |-------------------|------------|----------------|--------------------|
-|| **Adhelia Issabel** | H110124001 | [Page 2 — Pricing](https://www.notion.com/pricing) | Sebagian komponen pricing |
+| **Adhelia Issabel** | H110124001 | [Page 2 — Pricing](https://www.notion.com/pricing) | Sebagian komponen pricing |
 | **Chalysta Setyani** | H110124003 | [Page 1 — Home](https://www.notion.com/) | `downloadapps-block-zsect.tsx`<br>`downloadapps-downloadscontainer-l1...`<br>`footer-footerinner-mggso.tsx`<br>`footer-footerouter-kubgm.tsx`<br>`footer-footertop-rz2e9.tsx`<br>`footer-footertopmain2yt5m.tsx`<br>`homepage-bentocontainer-x8gz.tsx`<br>`homepage-main-srg4.tsx`<br>`homepage-main-srg41.tsx`<br>`homepage-main-srg42.tsx` |
 | **Iqlima Nur'Ain** | H110124007 | [Page 2 — Pricing](https://www.notion.com/pricing) | Sebagian komponen pricing |
 | **Aisyah** | H110124044 | [Page 1 — Home](https://www.notion.com/) | `base-theme-fjxcl.tsx`<br>`base-theme-k5iih.tsx`<br>`base-theme-k5iih1.tsx`<br>`base-theme-k5iih2.tsx`<br>`base-theme-k5iih3.tsx`<br>`div.tsx`<br>`div1.tsx`<br>`layout-main-lal4b.tsx`<br>`next.tsx` |
