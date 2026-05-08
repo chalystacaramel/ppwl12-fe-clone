@@ -15,36 +15,14 @@ Main Web: [notion.com](https://www.notion.com/)
 
 |        Name       |    NIM     | Reference Page | Spesific Component |
 |-------------------|------------|----------------|--------------------|
-| Adhelia Issabel   | H110124001 | [Page2-Pricing](https://www.notion.com/pricing) | sebagian komponen |
-| Chalysta Setyani  | H110124003 | [Page1-Home](https://www.notion.com/) | downloadapps-block-zsect.tsx
-downloadapps-downloadscontainer-l1...
-footer-footerinner-mggso.tsx
-footer-footerouter-kubgm.tsx
-footer-footertop-rz2e9.tsx
-footer-footertopmain2yt5m.tsx
-homepage-bentocontainer-x8gz.tsx
-homepage-main-srg4.tsx
-homepage-main-srg41.tsx
-homepage-main-srg42.tsx |
-| Iqlima Nur'Ain    | H110124007 | [Page2-Pricing](https://www.notion.com/pricing) | sebagian komponen |
-| Aisyah            | H110124044 | [Page1-Home](https://www.notion.com/) | base-theme-fjxcl.tsx
-base-theme-k5iih.tsx
-base-theme-k5iih1.tsx
-base-theme-k5iih2.tsx
-base-theme-k5iih3.tsx
-div.tsx
-div1.tsx
-layout-main-lal4b.tsx
-next.tsx |
-| Andy Emerik       | H110124045 | [Page1-Home](https://www.notion.com/) | homepage-section-tv7x.tsx
-homepage-section-tv7x1.tsx
-homepage-section-tv7x2.tsx
-homepage-section-tv7x3.tsx
-homepageheroagents-hero-pgxpj.tsx
-iscampaignagentshomepagehero.tsx
-rbmh1.tsx
-section.tsx
-x78zum5.tsx |
+|| **Adhelia Issabel** | H110124001 | [Page 2 — Pricing](https://www.notion.com/pricing) | Sebagian komponen pricing |
+| **Chalysta Setyani** | H110124003 | [Page 1 — Home](https://www.notion.com/) | `downloadapps-block-zsect.tsx`<br>`downloadapps-downloadscontainer-l1...`<br>`footer-footerinner-mggso.tsx`<br>`footer-footerouter-kubgm.tsx`<br>`footer-footertop-rz2e9.tsx`<br>`footer-footertopmain2yt5m.tsx`<br>`homepage-bentocontainer-x8gz.tsx`<br>`homepage-main-srg4.tsx`<br>`homepage-main-srg41.tsx`<br>`homepage-main-srg42.tsx` |
+| **Iqlima Nur'Ain** | H110124007 | [Page 2 — Pricing](https://www.notion.com/pricing) | Sebagian komponen pricing |
+| **Aisyah** | H110124044 | [Page 1 — Home](https://www.notion.com/) | `base-theme-fjxcl.tsx`<br>`base-theme-k5iih.tsx`<br>`base-theme-k5iih1.tsx`<br>`base-theme-k5iih2.tsx`<br>`base-theme-k5iih3.tsx`<br>`div.tsx`<br>`div1.tsx`<br>`layout-main-lal4b.tsx`<br>`next.tsx` |
+| **Andy Emerik** | H110124045 | [Page 1 — Home](https://www.notion.com/) | `homepage-section-tv7x.tsx`<br>`homepage-section-tv7x1.tsx`<br>`homepage-section-tv7x2.tsx`<br>`homepage-section-tv7x3.tsx`<br>`homepageheroagents-hero-pgxpj.tsx`<br>`iscampaignagentshomepagehero.tsx`<br>`rbmh1.tsx`<br>`section.tsx`<br>`x78zum5.tsx` |
 
-Tekan page 1nya di ikon notion sebelah kiri atas
-Page 2 navbar bag Pricing
+---
+
+# 📌 Notes
+- Untuk menuju **Page 1 (Home)**, tekan ikon **Notion** di kiri atas navbar.
+- Untuk menuju **Page 2 (Pricing)**, tekan bagian **Pricing** pada navbar.
