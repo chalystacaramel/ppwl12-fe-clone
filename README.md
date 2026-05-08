@@ -18,3 +18,6 @@ Main Web: [notion.com](https://www.notion.com/)
 | Iqlima Nur'Ain    | H110124007 | [Page2-Pricing](https://www.notion.com/pricing) | sebagian komponen |
 | Aisyah            | H110124044 | [Page1-Home](https://www.notion.com/) | sebagian komponen |
 | Andy Emerik       | H110124045 | [Page1-Home](https://www.notion.com/) | sebagian komponen |
+
+Tekan page 1nya di ikon notion sebelah kiri atas
+Page 2 navbar bag Pricing
