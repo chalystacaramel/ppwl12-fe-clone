@@ -13,8 +13,8 @@ Main Web: [notion.com](https://www.notion.com/)
 
 |        Name       |    NIM     | Reference Page | Spesific Component |
 |-------------------|------------|----------------|--------------------|
-| Adhelia Issabel   | H110124001 | [Page2-Langganan](https://www.notion.com/pricing) | Pricing Calculator |
-| Chalysta Setyani  | H110124003 | [Page1-Home](https://www.notion.com/) | Main Content, Features, Testimonials |
-| Iqlima Nur'Ain    | H110124007 | [Page2-Langganan](https://www.notion.com/pricing) | Title Area |
-| Aisyah            | H110124044 | [Page1-Home](https://www.notion.com/) | Navbar, Header Carousel, Logo |
-| Andy Emerik       | H110124045 | [Page1-Home](https://www.notion.com/) | Footer |
+| Adhelia Issabel   | H110124001 | [Page2-Pricing](https://www.notion.com/pricing) | sebagian komponen |
+| Chalysta Setyani  | H110124003 | [Page1-Home](https://www.notion.com/) | sebagian komponen |
+| Iqlima Nur'Ain    | H110124007 | [Page2-Pricing](https://www.notion.com/pricing) | sebagian komponen |
+| Aisyah            | H110124044 | [Page1-Home](https://www.notion.com/) | sebagian komponen |
+| Andy Emerik       | H110124045 | [Page1-Home](https://www.notion.com/) | sebagian komponen |
